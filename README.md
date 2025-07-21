@@ -30,7 +30,7 @@ npm install
 
 ## 사용법
 
-### 1. 직접 실행
+### 1. 직접 실행 경우
 
 ```bash
 # 환경 변수 설정
@@ -44,7 +44,7 @@ export DB_NAME=your_database
 npm start
 ```
 
-### 2. Claude Desktop 설정
+### 2. Claude Desktop 설정 해서 사용 할 경우
 
 Claude Desktop의 설정 파일에 다음과 같이 추가하세요:
 
