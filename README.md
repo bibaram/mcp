@@ -12,16 +12,14 @@ MySQL 데이터베이스에 연결할 수 있는 Model Context Protocol (MCP) �
 ## 설치
 
 ```bash
+git clone https://github.com/bibaram/mysql-mcp-server.git
+cd mysql-mcp-server
 npm install
 ```
-or
 
-git Downlod 했을 경우
+## 의존성에 문제가 있는 경우
 
 ```bash
-mkdir mysql-mcp-server
-cd mysql-mcp-server
-npm init -y
 npm install @modelcontextprotocol/sdk mysql2
 ```
 위 내용을 선행 후 git에서 받은 것을 다운로드 덮어 씌운 뒤
@@ -59,7 +57,7 @@ Claude Desktop의 설정 파일에 다음과 같이 추가하세요:
   "mcpServers": {
     "mysql": {
       "command": "node",
-      "args": ["path/to/mcp/server.js"],
+      "args": ["path/to/mysql-mcp-server/server.js"],
       "env": {
         "DB_HOST": "localhost",
         "DB_USER": "root",
@@ -78,7 +76,7 @@ Claude Desktop의 설정 파일에 다음과 같이 추가하세요:
   "mcpServers": {
     "mysql-prod": {
       "command": "node",
-      "args": ["path/to/mcp/server.js"],
+      "args": ["path/to/mysql-mcp-server/server.js"],
       "env": {
         "DB_HOST": "prod-server.com",
         "DB_USER": "prod_user",
@@ -88,7 +86,7 @@ Claude Desktop의 설정 파일에 다음과 같이 추가하세요:
     },
     "mysql-dev": {
       "command": "node",
-      "args": ["path/to/mcp/server.js"],
+      "args": ["path/to/mysql-mcp-server/server.js"],
       "env": {
         "DB_HOST": "localhost",
         "DB_USER": "dev_user",
