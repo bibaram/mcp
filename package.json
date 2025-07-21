@@ -1,0 +1,33 @@
+{
+  "name": "mysql-mcp-server",
+  "version": "1.0.0",
+  "description": "MySQL MCP Server for Model Context Protocol",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "mysql2": "^3.11.0"
+  },
+  "bin": {
+    "mysql-mcp-server": "./server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "mysql",
+    "database",
+    "model-context-protocol"
+  ],
+  "author": "bibaram",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bibaram/mcp.git"
+  }
+}
