@@ -14,6 +14,21 @@ MySQL 데이터베이스에 연결할 수 있는 Model Context Protocol (MCP) �
 ```bash
 npm install
 ```
+or
+
+git Downlod 했을 경우
+
+```bash
+mkdir mysql-mcp-server
+cd mysql-mcp-server
+npm init -y
+npm install @modelcontextprotocol/sdk mysql2
+```
+위 내용을 선행 후 git에서 받은 것을 다운로드 덮어 씌운 뒤
+
+```bash
+npm install
+```
 
 ## 사용법
 
