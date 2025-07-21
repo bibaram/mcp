@@ -36,6 +36,7 @@ npm start
 Claude Desktop의 설정 파일에 다음과 같이 추가하세요:
 
 **Windows**: `%APPDATA%/Claude/claude_desktop_config.json`
+
 **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
 
 ```json
